@@ -54,7 +54,7 @@ class MyLexer(object):
        'DIVIDE',
        'LPAREN',
        'RPAREN',
-       'ID' # Pour les noms de variables
+       'IDENTIFIER' # Pour les noms de variables
     ]  + list(reserved.values())
 
     # Regular expression rules for simple tokens
