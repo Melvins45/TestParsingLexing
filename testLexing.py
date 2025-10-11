@@ -45,6 +45,32 @@ class MyLexer(object):
         "with" : "WITH"
     }
     
+    tokens_pascal = {
+        "mots_reserves": [
+            "program", "begin", "end", "var", "const", "type", "procedure", "function",
+            "if", "then", "else", "case", "of", "while", "do", "repeat", "until",
+            "for", "to", "downto", "with", "goto", "array", "record", "set", "file"
+        ],
+        "types_donnees": [
+            "integer", "real", "char", "boolean", "string"
+        ],
+        "operateurs": [
+            "+", "-", "*", "/", ":=", "=", "<>", "<", "<=", ">", ">=", "and", "or", "not", "div", "mod"
+        ],
+        "separateurs": [
+            ";", ":", ",", ".", "(", ")", "[", "]"
+        ],
+        "constantes": [
+            "entier", "réel", "caractère", "chaîne", "booléen"
+        ],
+        "commentaires": [
+            "{...}", "(*...*)", "//..."
+        ],
+        "identifier": [
+            "[a-zA-Z_][a-zA-Z_0-9]*"
+        ]
+    }
+    
     # List of token names.   This is always required
     tokens = [
        'NUMBER',
